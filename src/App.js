@@ -5,11 +5,13 @@ import FilterButton from "./components/FilterButton";
 
 import {nanoid} from "nanoid";
 
+
 const FILTER_MAP = {
   All: () => true,
   Active : task => !task.completed,
   Completed : task => task.completed,
 }
+
 
 
 function usePrevious(value) {
